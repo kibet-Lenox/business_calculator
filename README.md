@@ -1,24 +1,36 @@
-## Business tool.
+ # Business Calculator
 
-Shows currency conversion of different countries, and the likelihood cause of the current exchange rates.
+A lightweight business tool that combines real-time currency conversion with live business news headlines.
+Enter a country code, amount, and target currency — it converts the value and pulls the latest business news for that country.
 
-Using ExchangeRate API key, and NewsAPI key.
+## What It Does
+
+- Accepts currency codes (e.g. KES, USD, UGX, TZS), amount, and target currency
+- Fetches live exchange rates via ExchangeRate-API
+- Converts amount instantly (e.g. 5000 KES to USD)
+- Generates top 3 business news headlines for the source country via NewsAPI
+- Validates all inputs before search
 
 ## Setup
 
-1. Clone the repo
-2. Run: pip install requests python-dotenv
-3. Create a .env file with: OPENWEATHER_API_KEY=your_key_here
-4. Get a free key at ExchangeRate.com, and newapi.org
+No install needed. This is a single-file frontend app.
+
+You will need 2 free API keys:
+
+1. **ExchangeRate-API Key:** https://www.exchangerate-api.com/
+2. **NewsAPI Key:** https://newsapi.org/
+
+Clone or download `index.html` and open in your browser.
 
 ## Usage
 
-Phase 2 week 1 project.html
+1. Enter country code e.g `KES`, `USD`, `UGX`
+2. Enter amount e.g `5000`
+3. Enter final currency e.g `USD`
+4. Paste your ExchangeRate API key and News API key
+5. Click **Search**
 
-## Example Output
-10000 USD = 7477.00 GBP
-Rate: 1 USD = 0.7477 GBP
-
-Business News: Usd
-Dow and Small Caps Climb Weekly While Nasdaq Slips on Megacap Earnings Charges
-VANCOUVER, BC, Oct. 23, 2026 /PRNewswire/ -- Stock Preachers News Commentary - Stocks closed a volatile earnings week with a split verdict: the Dow gained 0.64% and the Russell 2000 jumped 2.07%, while the Nasdaq Composite fell 0.45% and the S&P 500 slipped 0…
+```html
+Country: KES
+Amount: 5000
+Target: USD
